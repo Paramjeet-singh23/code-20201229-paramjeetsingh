@@ -1,19 +1,16 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[4]:
 
 
 import json
 import pandas as pd
 
-data = [{"Gender": "Male", "HeightCm": 171, "WeightKg": 96 },
-{ "Gender": "Male", "HeightCm": 161, "WeightKg": 85 },
-{ "Gender": "Male", "HeightCm": 180, "WeightKg": 77 },
-{ "Gender": "Female", "HeightCm": 166, "WeightKg": 62},
-{"Gender": "Female", "HeightCm": 150, "WeightKg": 70},
-{"Gender": "Female", "HeightCm": 167, "WeightKg": 82}]
+# data = [{"Gender": "Male", "HeightCm": 171, "WeightKg": 96 },
+# { "Gender": "Male", "HeightCm": 161, "WeightKg": 85 },
+# { "Gender": "Male", "HeightCm": 180, "WeightKg": 77 },
+# { "Gender": "Female", "HeightCm": 166, "WeightKg": 62},
+# {"Gender": "Female", "HeightCm": 150, "WeightKg": 70},
+# {"Gender": "Female", "HeightCm": 167, "WeightKg": 82}]
 
+#send data as jason format
 def calculate_bmi(data):
     
     data_list=[]
@@ -54,28 +51,5 @@ def calculate_bmi(data):
             
     return total_overweight,df
 
-calculate_bmi
-
-
-# In[8]:
-
-
-
-
-
-# In[9]:
-
-
-
-            
-        
-            
-        
-        
-
-
-# In[ ]:
-
-
-
-
+#return dataframe of bmi calculated df and total overweight
+calculate_bmi(data)
